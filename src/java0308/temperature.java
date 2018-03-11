@@ -2,7 +2,7 @@ package java0308;
 
 import java.util.Scanner;
 
-public class Main {
+public class temperature {
 
 	private static Scanner in;
 

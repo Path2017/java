@@ -2,7 +2,7 @@ package java0308;
 
 import java.util.Scanner;
 
-public class Hell {
+public class list01 {
 
 	private static Scanner in;
 

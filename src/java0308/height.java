@@ -2,7 +2,7 @@ package java0308;
 
 import java.util.Scanner;
 
-public class Hello {
+public class height {
 
 	private static Scanner in;
 
