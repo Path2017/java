@@ -2,7 +2,7 @@ package java0308;
 
 import java.util.Scanner;
 
-public class Main {
+public class timecompute {
 	public static Scanner in;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
