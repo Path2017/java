@@ -3,22 +3,26 @@ package java0308;
 import java.util.Scanner;
 
 public class Main {
-	public static Scanner in;
+
+	private static Scanner in;
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int num;
-		int num1 = 0;
-		int num2 = 0;
+		int numinput; // 除以10剩余数
+		int numoutput = 0;
+		int flag; // 余数
+		int tag = 0; // 记录当前
+		int arr = 1; // 记录2进制倍数
 		in = new Scanner(System.in);
-		num = in.nextInt();
-		while(!(num == -1)) {
-			if(num%2 == 0) {
-				num2 = num2 +1;
-			}else {
-				num1 = num1 +1;
+		numinput = in.nextInt();
+		while(numinput>0) {
+			flag = numinput%10;
+			numinput = numinput/10;
+			tag = tag +1;
+			if(flag%2 == tag%2) {
+				numoutput = numoutput + arr;
 			}
-			num = in.nextInt();
+			arr = arr*2; 
 		}
-		System.out.println(num1+" "+num2);
+		System.out.println(numoutput);
 	}
 }
