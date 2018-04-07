@@ -2,10 +2,8 @@ package java0308;
 
 import java.util.Scanner;
 
-public class Main {
-
-	private static Scanner in;
-
+public class amount {
+	public static Scanner in;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int n;
@@ -13,6 +11,8 @@ public class Main {
 		int sum = 0;
 		in = new Scanner(System.in);
 		int i =0;
+		// 记录当前的素数
+		int current = 2;
 		n = in.nextInt();
 		m = in.nextInt();
 		NUM:
@@ -29,12 +29,13 @@ public class Main {
 				if(i>=n) {
 					sum = sum + j;
 				}
+				System.out.println(j+"当前是个数:"+i+"和为:"+sum);
 				if(i == m) {
 					break NUM;
 				}
 			}
 		}
-		System.out.println(sum);
+				
 	}
 
 }
