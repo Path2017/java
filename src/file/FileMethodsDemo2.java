@@ -11,8 +11,8 @@ public class FileMethodsDemo2 {
 		boolean b1 = file.createNewFile();
 		System.out.println("b1=" + b1);
 		// -----------删除文件操作-------注意：不去回收站。慎用------
-		//boolean b2 = file.delete();
-		//System.out.println("b2=" + b2);
+		boolean b2 = file.delete();
+		System.out.println("b2=" + b2);
 
 		// -----------需要判断文件是否存在------------
 		boolean b3 = file.exists();
@@ -24,13 +24,13 @@ public class FileMethodsDemo2 {
 		boolean b4 = dir.mkdir();
 		System.out.println("b4=" + b4);
 		// 删除目录时，如果目录中有内容，无法直接删除。
-		//boolean b5 = dir.delete();
+		boolean b5 = dir.delete();
 		// 只有将目录中的内容都删除后，保证该目录为空。这时这个目录才可以删除。
-		//System.out.println("b5=" + b5);
+		System.out.println("b5=" + b5);
 
 		// -----------判断文件，目录------------
 		File f = new File("C:\\Users\\Pathliu\\Desktop\\MyWeb_2017\\gitHub\\java\\src\\test");// 要判断是否是文件还是目录，必须先判断存在。
-		// f.mkdir();//f.createNewFile();
+		f.mkdir();//f.createNewFile();
 		System.out.println(f.isFile());
 		System.out.println(f.isDirectory());
 	}
